@@ -1,29 +1,17 @@
 {
-  "name": "broken-disc",
-  "version": "0.9.0",
-  "description": "Discord music bot built with discord.js",
+  "name": "music-bot",
   "main": "index.js",
-  "author": "BlackKnight683 <contact@blackknight683.tk>",
-  "private": true,
-  "homepage": "https://github.com/BlackKnight683/Broken-Disc",
-  "repository": "github:BlackKnight683/Broken-Disc",
-  "bugs": "https://github.com/BlackKnight683/Broken-Disc/issues",
-  "engines": {
-    "node": "12.x"
+  "author": "ZerioDev",
+  "version": "5.0.0",
+  "repository": "https://github.com/ZerioDev/Music-bot.git",
+  "description": "A complete code to download for a music bot. Using a module (discord-player).",
+  "scripts": {
+    "start": "node index.js"
   },
   "dependencies": {
     "@discordjs/opus": "^0.3.3",
-    "array-move": "^3.0.1",
+    "discord-player": "^3.3.2",
     "discord.js": "^12.5.1",
-    "erit-ytdl": "^0.1.2",
-    "ffmpeg-static": "^4.2.3",
-    "lyrics-finder": "^21.0.5",
-    "simple-youtube-api": "^5.1.1",
-    "soundcloud-downloader": "^0.2.1",
-    "string-progressbar": "^1.0.1",
-    "ytdl-core": "^4.1.2"
-  },
-  "scripts": {
-    "start": "node index.js"
+    "ffmpeg-static": "^4.2.7"
   }
 }

@@ -1,95 +1,86 @@
-<h1 align="center">No Coding Needed Discord Music Bot</h1>
-<p align="center"><img src="https://cdn.discordapp.com/attachments/779285545775661076/844206868150878208/unnamed.png"></p>
+# Music-bot
+A complete code to download for a music bot. Using a module (discord-player) 🎧
 
-## Tutorial
-Tutorial has been uploaded on YouTube <img src="https://www.youtube.com/about/static/svgs/icons/brand-resources/YouTube_icon_full-color.svg?cache=f2ec7a5" width="30px"> 
+Looking for a code for a music bot ? This fully open source code is made for your project !
 
-Watch it by clicking [here](https://bit.ly/blackknight683)
+If you need help with this project, to get support faster you can join the help server by just clicking [here](https://discord.gg/5cGSYV8ZZj).
 
-## Run the projects
+### ⚡ Installation
 
-Glitch: [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/BlackKnight683/Broken-Disc)
+Well, let's start by downloading the code.
+Go to the folder `config` then the file `bot.js`.
+For the bot to be able to start, please complete the file with your credentials as follows :
 
-Heroku: [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BlackKnight683/Broken-Disc)
+- For emojis
 
-Repl: [![Run on Repl.it](https://repl.it/badge/github/BlackKnight683/Broken-Disc)](https://repl.it/github/BlackKnight683/Broken-Disc)
-
-
-Made with :heart: and JavaScript!
-
-## Configuration
-
-Copy or Rename `config.json.example` to `config.json` and fill out the values:
-
-```json
-{
-  "TOKEN": "",
-  "YOUTUBE_API_KEY": "",
-  "SOUNDCLOUD_CLIENT_ID": "",
-  "MAX_PLAYLIST_SIZE": 10,
-  "PREFIX": "/",
-  "PRUNING": false,
-  "STAY_TIME": 30
+```js
+emojis: {
+    off: ':x:',
+    error: ':warning:',
+    queue: ':bar_chart:',
+    music: ':musical_note:',
+    success: ':white_check_mark:',
 }
 ```
 
-## Features & Commands
+- For configuration
 
-> Note: The default prefix is '/'
+```js
+discord: {
+    token: 'TOKEN',
+    prefix: 'PREFIX',
+    activity: 'ACTIVITY',
+}
+```
 
-* 🎶 Play music from YouTube via url
+- `token`, the token of the bot available on the [Discord Developers](https://discordapp.com/developers/applications) section.
+- `prefix`, the prefix that will be set to use the bot.
+- `activity`, the activity of the bot.
 
-`/play https://www.youtube.com/watch?v=XXX69420`
+In the console, type `npm install` to install all dependencies.
 
-* 🔎 Play music from YouTube via search query
+- To start the bot :
 
-`/play Faded`
+```
+#With Node
+node index.js
+npm start #Indicated in package.json
 
-* 🎶 Play music from Soundcloud via url
+#With pm2
+pm2 start index.js --name "MusicBot"
+```
 
-`/play https://soundcloud.com/blackknight683/free-moneyz`
+All you have to do is turn on your bot !
 
-* 🔎 Search and select music to play
+### 🎵 Music commands
 
-`/search RickRoll`
+```
+play <name/URL>, play music in a voice channel.
+search <name>, open a panel to choose a music and then play it.
+pause, pause the current music.
+resume, puts the current music back on.
+queue, see the next songs.
+clear-queue, remove music in the queue.
+shuffle, to mix the queue.
+nowplaying, see music in progress.
+loop, to enable or disable the repeat function.
+volume <1 - 100>, change the volume.
+skip, skip to next music.
+stop, stop all music.
+filter <filter>, add / remove filter.
+w-filters, see filters.
+```
 
-Reply with song number or numbers seperated by comma that you wish to play
+### 💡 General commands
 
-Examples: `1` or `1,2,3`
+```
+ping, see the bot latency.
+help, see the list of available commands.
+debug, see number of voice connections.
+```
 
-* Play youtube playlists via url
+### 🏓 Utilities (to change the code)
 
-`/playlist https://www.youtube.com/watch?v=Your_QuErRy_hErE`
+Find all the functions available on the official code [right here](https://github.com/Androz2091/discord-player).
 
-* 🔎 Play youtube playlists via search query
-
-* Now Playing (/np)
-* Queue system (/queue, /q)
-* Loop / Repeat (/loop)
-* Shuffle (/shuffle)
-* Volume control (/volume, /v)
-* Lyrics (/lyrics, /ly)
-* Pause (/pause)
-* Resume (/resume, /r)
-* Skip (/skip, /s)
-* Skip to song # in queue (/skipto, /st)
-* Remove song # from queue (/remove, /rm)
-* Toggle pruning of bot messages (/pruning)
-* Help (/help, /h)
-* Command Handler from [discordjs.guide](https://discordjs.guide/)
-* Media Controls via Reactions
-
-## 🤝 Contributing
-
-1. [Fork the repository](https://github.com/BlackKnight683/Broken-Disc/fork)
-2. Clone your fork: `git clone https://github.com/your-username/Broken-Disc.git`
-3. Create your feature branch: `git checkout -b my-new-feature`
-4. Commit your changes: `git commit -am 'Add some feature'`
-5. Push to the branch: `git push origin my-new-feature`
-6. Submit a pull request
-
-## 📝 Credits
-
-[@iCrawl](https://github.com/iCrawl) For the queue system used in this application which was adapted from [@iCrawl/discord-music-bot](https://github.com/iCrawl/discord-music-bot)
-
-[@eritislami](https://github.com/eritislami) For the advanced search system used in this application which was adapted from [@eritislami/evobot](https://github.com/eritislami/evobot)
+This is used with [discord.js](https://www.npmjs.com/package/discord.js) and [discord-player](https://www.npmjs.com/package/discord-player).
