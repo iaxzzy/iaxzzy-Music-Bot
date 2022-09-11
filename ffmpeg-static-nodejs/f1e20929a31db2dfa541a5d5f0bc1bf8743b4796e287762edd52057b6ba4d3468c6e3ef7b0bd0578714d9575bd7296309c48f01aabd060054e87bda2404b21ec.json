@@ -1,0 +1,25 @@
+{
+  "statusCode": 200,
+  "headers": {
+    "connection": "close",
+    "content-length": "2173",
+    "x-amz-id-2": "PcZF0JpQeSqvYgg+/YPtb3F4mQnACfuVqvNHMCkwqleN1wrzgjaSO560nFUFW6XBrEC3kAp4+3o=",
+    "x-amz-request-id": "TQNVTKKMC63X84VJ",
+    "last-modified": "Wed, 17 Mar 2021 12:58:11 GMT",
+    "etag": "\"0244e5fa2c35fa9978c41aea7ba6c519\"",
+    "content-disposition": "attachment; filename=linux-x64.README",
+    "content-type": "application/octet-stream",
+    "server": "AmazonS3",
+    "via": "1.1 varnish, 1.1 varnish",
+    "accept-ranges": "bytes",
+    "date": "Thu, 03 Jun 2021 20:21:49 GMT",
+    "age": "118",
+    "x-served-by": "cache-dca17747-DCA, cache-bwi5022-BWI",
+    "x-cache": "MISS, HIT",
+    "x-cache-hits": "0, 1",
+    "strict-transport-security": "max-age=31536000",
+    "x-fastly-request-id": "075dd442d9129b7379f365b4151921bd050d08d4"
+  },
+  "requestHeaders": {},
+  "requestTimestamp": 1622751709045
+}
